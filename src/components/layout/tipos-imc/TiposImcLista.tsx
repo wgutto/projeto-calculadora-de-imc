@@ -3,7 +3,7 @@ import { imcData } from "@/constants/imcData"
 
 export const TiposImcLista = () => {
     return (
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3">
             {imcData.map((item, index) =>
                 <Card key={index} className={`items-center ${item.cor} gap-6`}>
 

@@ -8,7 +8,7 @@ export const TipoImcObeso = () => {
     return (
         <div className="w-full h-full">
             {tipoMagreza.map((item, index) =>
-                <Card key={index} className={`w-full h-full items-center justify-center ${item.cor}`}>
+                <Card key={index} className={`relative w-full h-full items-center justify-center ${item.cor}`}>
                     <div className="flex flex-col items-center gap-2">
                         <div className={`${item.bgImagem} p-6 rounded-full`}>
                             <img src={`projeto-imagens/${item.imagem}`} alt={item.tipo} className="size-9" />
@@ -22,6 +22,10 @@ export const TipoImcObeso = () => {
                     <CardDescription className="text-white text-md mt-15">
                         {item.descricao}
                     </CardDescription>
+
+                    <button onClick={() => imcContext?.setImc(0)} className="absolute -left-5 top-6 bg-cyan-900 p-4 rounded-full cursor-pointer hover:bg-cyan-950 lg:p-6 lg:-left-10 lg:top-auto">
+                        <img className="size-4 lg:size-8" src={`projeto-imagens/leftarrow.png`} alt="" />
+                    </button>
                 </Card>
             )}
         </div>
