@@ -1,9 +1,9 @@
-## 👨‍💻 Links
+## Links
 
 - Repositório: [projeto-calculadora-de-imc](https://github.com/wgutto/projeto-calculadora-de-imc)
 - Site: [projeto-calculadora-de-imc](https://projeto-calculadora-de-imc-pearl.vercel.app/)
 
-# 🏥 Calculadora de IMC - Índice de Massa Corporal
+# Calculadora de IMC - Índice de Massa Corporal
 
 Uma aplicação web moderna e responsiva para calcular o Índice de Massa Corporal (IMC) com uma interface intuitiva e informações detalhadas sobre categorias de peso.
 
@@ -12,33 +12,7 @@ Uma aplicação web moderna e responsiva para calcular o Índice de Massa Corpor
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?style=flat-square&logo=tailwindcss)
 
-## 📋 Sobre o Projeto
-
-O **Calculadora de IMC** é uma aplicação educacional e prática que permite aos usuários:
-
-- ✅ Calcular seu Índice de Massa Corporal (IMC)
-- 📊 Visualizar sua classificação de peso em tempo real
-- 🎨 Explorar todas as categorias de IMC com cores e ícones visuais
-- 🌓 Alternar entre modo claro e escuro
-- 📱 Acessar a aplicação em qualquer dispositivo (responsiva)
-
-### Fórmula de Cálculo
-
-O IMC é calculado utilizando a fórmula internacional:
-
-$$\text{IMC} = \frac{\text{Peso (kg)}}{\text{Altura (m)}^2}$$
-
-### Categorias de IMC
-
-| Categoria | Intervalo | Cor |
-|-----------|-----------|-----|
-| **Magreza** | 0 - 18.4 | 🔵 Azul |
-| **Normal** | 18.5 - 24.9 | 🟢 Verde |
-| **Sobrepeso** | 25 - 29.9 | 🟡 Amarelo |
-| **Obesidade** | 30 - 39.9 | 🟠 Laranja |
-| **Obesidade Severa** | 40+ | 🔴 Vermelho |
-
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Frontend
 - **Next.js 16** - Framework React com renderização otimizada
@@ -61,7 +35,7 @@ $$\text{IMC} = \frac{\text{Peso (kg)}}{\text{Altura (m)}^2}$$
 - **class-variance-authority** - Variações de classes CSS
 - **tailwind-merge** - Merge inteligente de classes Tailwind
 
-## 🎨 Funcionalidades Principais
+## Funcionalidades Principais
 
 ### Formulário Validado
 - Validação em tempo real com Zod
@@ -78,14 +52,14 @@ $$\text{IMC} = \frac{\text{Peso (kg)}}{\text{Altura (m)}^2}$$
 - Persistência de preferência do usuário
 - Transições suaves entre temas
 
-## 🧪 Testes e Validação
+## Testes e Validação
 
 O projeto utiliza:
 - **TypeScript** para validação de tipos em tempo de compilação
 - **ESLint** para análise estática de código
 - **Zod** para validação de dados em runtime
 
-## 🔐 Segurança
+## Segurança
 
 - Validação de entrada com Zod
 - Tipagem forte com TypeScript
