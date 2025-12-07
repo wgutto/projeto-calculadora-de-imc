@@ -1,6 +1,6 @@
-import { SideArea } from "@/components/interface/SideArea"
-import { ToggleThemeMode } from "@/components/ToggleThemeMode"
-import { ImcProvider } from "@/contexts/ImcContext"
+import { SideArea } from "@/components/layout/SideArea"
+import { ToggleThemeMode } from "@/components/layout/ToggleThemeMode"
+import { ImcProvider } from "@/features/contexts/ImcContext"
 
 const Page = () => {
   return (

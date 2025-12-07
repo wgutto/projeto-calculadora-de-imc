@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { imcData } from "@/data/imcData"
+import { imcData } from "@/constants/imcData"
 
 export const TiposImcLista = () => {
     return (

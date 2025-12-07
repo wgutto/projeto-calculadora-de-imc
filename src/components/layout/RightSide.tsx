@@ -1,6 +1,6 @@
 "use client"
 
-import { useImc } from "@/contexts/ImcContext"
+import { useImc } from "@/features/contexts/ImcContext"
 import { TipoImcMagreza } from "./tipos-imc/TipoImcMagreza"
 import { TipoImcNormal } from "./tipos-imc/TipoeImcNormal"
 import { TipoImcObeso } from "./tipos-imc/TipoImcObeso"

@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { useImc } from "@/contexts/ImcContext"
-import { imcData } from "@/data/imcData"
+import { useImc } from "@/features/contexts/ImcContext"
+import { imcData } from "@/constants/imcData"
 
 export const TipoImcMagreza = () => {
     const imcContext = useImc()

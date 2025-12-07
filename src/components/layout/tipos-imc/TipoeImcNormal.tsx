@@ -1,10 +1,10 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { useImc } from "@/contexts/ImcContext"
-import { imcData } from "@/data/imcData"
+import { useImc } from "@/features/contexts/ImcContext"
+import { imcData } from "@/constants/imcData"
 
-export const TipoImcSobrepeso = () => {
+export const TipoImcNormal = () => {
     const imcContext = useImc()
-    const tipoMagreza = imcData.filter((item) => item.tipo === "Sobrepeso")
+    const tipoMagreza = imcData.filter((item) => item.tipo === "Normal")
     return (
         <div className="w-full h-full">
             {tipoMagreza.map((item, index) =>
