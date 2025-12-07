@@ -12,7 +12,7 @@ const Page = () => {
         <div className="flex gap-2 items-center">
           <h1 className="text-xl text-white font-bold bg-cyan-900 px-4 py-1">IMC</h1>
 
-          <p className="text-muted-foreground text-sm">powered by <span className="font-semibold">Augusto Brito</span></p>
+          <p className="text-muted-foreground text-sm">powered by <a href="https://github.com/wgutto" target="_blank" className="font-semibold hover:underline">Augusto Brito</a></p>
         </div>
         <SideArea/>
       </main>
