@@ -23,7 +23,7 @@ export const TipoImcMagreza = () => {
                         {item.descricao}
                     </CardDescription>
 
-                    <button onClick={() => imcContext?.setImc(0)} className="absolute -left-5 top-6 bg-cyan-900 p-4 rounded-full cursor-pointer hover:bg-cyan-950 lg:p-6 lg:-left-10 lg:top-auto">
+                    <button onClick={() => imcContext?.setImc(0)} className="absolute -left-0.5 -top-0.5 rounded-tl-md rounded-br-md bg-cyan-900 p-6 rounded- cursor-pointer hover:bg-cyan-950 lg:rounded-full lg:p-6 lg:-left-10 lg:top-auto">
                         <img className="size-4 lg:size-8" src={`projeto-imagens/leftarrow.png`} alt="" />
                     </button>
                 </Card>

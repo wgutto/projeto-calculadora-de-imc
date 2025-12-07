@@ -29,6 +29,10 @@ const formSchema = z.object({
 
 export const FormArea = () => {
     const imcContext = useImc();
+    let ativoDesativo = 0
+    if(imcContext?.imc) {
+        ativoDesativo = imcContext?.imc
+    }
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -61,6 +65,7 @@ export const FormArea = () => {
                                         type="number" 
                                         placeholder="Digite sua altura. Ex: 1.56 (em métros)"
                                         className="border-b-3 px-1 py-3 outline-none"
+                                        disabled={ativoDesativo > 0}
                                     {...field}/>
                                 </FormControl>
                                 <FormMessage />
@@ -79,13 +84,14 @@ export const FormArea = () => {
                                         type="number" 
                                         placeholder="Digite seu peso. Ex: 75.8 (em kg)"
                                         className="border-b-3 px-1 py-3 outline-none"
+                                        disabled={ativoDesativo > 0}
                                     {...field}/>
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                    <Button className="w-full my-5 bg-cyan-900 text-white cursor-pointer hover:bg-cyan-950" type="submit">Calcular</Button>
+                    <Button className="w-full my-5 bg-cyan-900 text-white cursor-pointer hover:bg-cyan-950" type="submit" disabled={ativoDesativo > 0}>Calcular</Button>
                 </form>
             </Form>
         </div>
